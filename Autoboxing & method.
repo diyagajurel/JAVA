@@ -1,0 +1,14 @@
+public class AbDemo {
+    public static void test1(Integer a){
+        System.out.println(a);
+    }
+    public static void test2(int b){
+        System.out.println(b);
+    }
+    public static void main(String args[]){
+        int a = 5; //primitive type
+        Integer b= 6; //wrapper type
+        test1(a);
+        test2(b);
+    }
+}
