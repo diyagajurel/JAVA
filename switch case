@@ -1,0 +1,46 @@
+import java.util.Scanner;
+/*
+syntax: switchcase(expression){
+case var:
+statements
+[break]:
+case var:
+statements
+[break]:
+
+[default:]
+{
+break;
+}
+}
+*/
+public class switchcase {
+    public static void main(String [] args){
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("enter a choice: 1: print the odd nos from 1 to n\n 2. print even nos from 1 to n");
+        int a = sc.nextInt();
+        System.out.println("enter n");
+        int g = sc.nextInt();
+        switch (a){
+            case 1:{
+                for (int i=1; i<g; i++){
+                    if (i%2==0){
+                        System.out.println(i);
+                    }
+                }
+                break;
+            }
+            case 2:{
+                for (int i=1; i<g; i++){
+                    if (i%2==1){
+                        System.out.println(i);
+                    }
+                }
+                break;
+            }
+            default:{
+                System.out.println("wrong choice");
+            }
+        }
+        
