@@ -1,0 +1,34 @@
+enum Season{
+    SPRING(1), SUMMER(2), AUTUMN(3), WINTER(4);
+    private int seasonId;
+    public int getSeasonId(){
+        return seasonId;
+    }
+    Season(int id){             //compile 
+        this.seasonId=id;       //garda private
+    }                           //huncha
+}
+
+public class Enum {
+    public static void main(String args[]){
+        System.out.println(Season.valueOf("WINTER"));
+        System.out.println(Season.WINTER.getSeasonId());
+        for(Season s : Season.values()){
+            switch(s){
+                case WINTER:{
+                    System.out.println(" it is cold in winter"+s);
+                    break;
+                }
+                case SUMMER:{
+                    System.out.println(" it is hot in summer"+s);
+                    break;
+                }
+                default:
+                    System.out.println("i dont know about"+s+"season");
+            }
+        }
+        System.out.println(Season.WINTER.ordinal());
+        System.out.println(Season.AUTUMN.name());
+    }
+    
+}
