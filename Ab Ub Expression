@@ -1,0 +1,27 @@
+// AutoBoxing UnBoxing Expression
+
+public class AbUBExpression {
+    public static void main(String args []){
+        //int
+        int a = 10;
+        Integer b = 20;
+        int c = a*b;
+        Integer d = a/b;
+        System.out.println(c);
+        System.out.println(d);
+        
+        //boolean
+        boolean p=true;
+        Boolean q=p;
+        boolean r=q;
+        System.out.println(p);
+        System.out.println(q);
+        System.out.println(r);
+        
+        //char
+        char e='a';
+        Character f=e;
+        char g=f;
+        System.out.println(g);
+    }
+}
