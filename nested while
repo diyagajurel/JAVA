@@ -1,0 +1,15 @@
+public class nestedwhile {
+   public static void main(String[]args){
+       
+       int a=10, b=2;
+       while(a<=13){
+           while(b<=2000){
+               b += a;      // (*) halda dherai ghumcha mero ma
+           }
+           a++;
+           System.out.println(b);
+       }
+       
+       
+   } 
+}
