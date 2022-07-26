@@ -1,0 +1,38 @@
+class ThreadA extends Thread{
+    String animal[]={"Tiger","Lion","cat","Dog"};
+    public void run(){
+        for(String v: animal){
+            System.out.println(v);
+            try{
+                Thread.sleep(1000);
+            }catch (InterruptedException ie){
+                System.out.println(ie);
+            }
+        }
+    }
+}
+class ThreadB extends Thread{
+    String Bird[]={"Crow","Sparrow","Pigeon","Sparrow"};
+    public void run(){
+        for(String v: Bird){
+            System.out.println(v);
+            try{
+                Thread.sleep(1000);
+            }catch (InterruptedException ie){
+                System.out.println(ie);
+            }
+        }
+    }
+}
+public class ThreadDemo {
+
+    public static void main(String[] args) {
+        System.out.println("Starting thread demo program");
+        ThreadA ta= new ThreadA();
+        ThreadB tb= new ThreadB();
+        ta.start();
+        tb.start();
+        System.out.println("end of the program");
+    }
+}
+
