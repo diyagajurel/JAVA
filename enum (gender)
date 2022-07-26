@@ -1,0 +1,27 @@
+/*
+enum in Java
+- serve the purpose of representing a group of named constants.
+-eg: the 4 suits in a deck of playing cards maybe 4 enumerators called: club, diamond, heart and spade,
+belongling to an enumerated type named suit.
+-enum declaration can be done inside and outside the class.
+*/
+ 
+ 
+
+package com.mycompany.enuminjava;
+
+enum gender {
+/// int a; mathi rakhda mildeina
+    MALE, FEMALE, OTHER;
+//    ";" when we add sth below this ^
+/// int a; tala milcha
+}
+
+public class EnuminJava {
+
+    public static void main(String[] args) {
+        for (gender g : gender.values()) {
+            System.out.println(g);
+        }
+    }
+}
