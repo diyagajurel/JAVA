@@ -1,0 +1,24 @@
+/*
+syntax:
+for(initialization; condition: update)
+{
+    statements...
+}
+eg:
+for(int i=1; i<=10; i++){
+    s.o.p(i);
+}
+ */
+package com.mycompany.controlstructure;
+
+//1^2+2^2+3^2+....+n^2
+
+public class forloop {
+    public static void main(String[] args){
+         int sum=0;
+        for(int i=1; i<=4; i++){
+            sum+=Math.pow(i,2);
+        }
+        System.out.println("Sum= " + sum);
+    }
+}
