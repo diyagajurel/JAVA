@@ -1,0 +1,54 @@
+class Rect{
+    double l,b;
+    public Rect(double l, double b){
+        this.l=l;
+        this.b=b;
+    }
+    public String toString(){
+//        return("Created by wie");
+        return String.valueOf(l*b);
+//alternative
+//        Double e=l*b;
+//        return e.toString();
+    }
+}
+public class stringdemo {
+    public static void main(String[] args){
+//        Rect r=new Rect(2.0,3.0);
+//        System.out.println(r.toString());//(r) and (r.toString()) rakhda same output auxa.
+//        int a[]={1,2,3};
+//        System.out.println(a);
+//        char b[]={'a','b','c'};
+//        System.out.println(b);
+
+//        String s1 = "I study in KIST";
+//        char ch[] = new char[6];
+//        s1.getChars(2,6,ch,1);
+//        for(int i=0; i<ch.length; i++){
+//            System.out.println(ch[i]);
+//        }
+//        System.out.println("End of program");
+
+//           String s1 = "I study in KIST";
+//           byte ba[] = new byte[6];
+//           s1.getBytes(2,6,ba,1);
+//           for(int i=0; i<ba.length; i++){
+//               System.out.println(ba[i]);
+//            }
+//           System.out.println("End of program");s
+
+            String s1 = "I study in KIST";
+            char ch[] = s1.toCharArray();
+            String s2 = "apple";
+            String s3 = "Apple";
+            System.out.println("apple" .equals("Apple"));
+            System.out.println("apple".equalsIgnoreCase("Apple"));
+            String s4 = "apple";
+            String s5 = "ape";
+            System.out.println(s4.compareTo(s5));
+            System.out.println("foobar".startsWith("foo"));
+            System.out.println("foobar".startsWith("bar"));
+            System.out.println("foobar".startsWith("bar",3));
+            System.out.println("foobar".endsWith("foo"));
+    }
+}
