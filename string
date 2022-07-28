@@ -1,0 +1,52 @@
+/*
+*String()
+*String(char [] arr)
+*String(char[]arr, int startIndex, int no_of_char)
+*String(byte[]arr)
+*String(byte[]arr, int stratIndex, int no_of_byte)
+*(String(String s)
+ */
+package com.mycompany.controlstructure;
+
+
+public class string {
+    public static void main(String[] args){
+//        String s1 = "Nepal";
+//        String s2 = "Nepal";
+//        String s3 = new String("Nepal");
+//        System.out.println(s1==s2);
+//        System.out.println(s2==s3);
+//        System.out.println(s2.equals(s3));
+
+//        String s4 = new String();
+//        int l = s4.length();
+//        System.out.println(l);
+//        String s5 = null;
+//        int l1 = s5.length();
+          
+//        char[] arr = {'a','p','p','l','e'};
+//        String s6 = new String (arr);
+//        System.out.println(s6);
+//        String s7 = new String(arr,2,2);
+//        System.out.println(s7);
+//        byte[] barr = {66,67,68,69,70};
+//        String s8 = new String(barr);
+//        System.out.println(s8);
+//        String s9 = new String(barr,0,3);
+//        System.out.println(s9);
+//        String s10 = new String(s9);
+//        System.out.println(s10);
+            
+            double d = 10.15;
+            int i = 5;
+            String s11 = String.valueOf(d);
+            String s12 = String.valueOf(i);
+            System.out.println(s11);
+            System.out.println(s12);
+            System.out.println(s11.length());
+            System.out.println(s12.length());
+            System.out.println("Nepal".length());
+            /*String length is also object.*/
+            System.out.println("Hello".charAt(3));
+    }
+}
